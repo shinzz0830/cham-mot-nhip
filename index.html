@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f7ed" />
+    <meta name="description" content="Khảo sát về FOMO, mua sắm trực tuyến và hình thức mua trước trả sau." />
+    <title>Chậm một nhịp — Khảo sát FOMO</title>
+    <meta http-equiv="refresh" content="0; url=survey.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <p><a href="survey.html">Đi đến khảo sát về FOMO</a></p>
+    <div class="scene scene-one" aria-hidden="true"></div>
+    <div class="scene scene-two" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Chậm một nhịp, về đầu trang"><span class="brand-mark" aria-hidden="true">♡</span><span>chậm một nhịp</span></a>
+      <span class="top-note"><span class="sparkle" aria-hidden="true">✳</span> một game nhỏ về FOMO</span>
+    </header>
+    <main id="home">
+      <section class="game-shell" aria-live="polite">
+        <section class="screen welcome-screen" id="welcome-screen">
+          <div class="welcome-copy">
+            <p class="eyebrow"><span></span> BÌNH TĨNH TRƯỚC NÚT “MUA NGAY”</p>
+            <h1>Sợ bỏ lỡ deal,<br /><em>hay sợ bỏ lỡ mình?</em></h1>
+            <p class="intro">Một chiếc deal đang đếm ngược. Một chiếc ví đang nhìn bạn. Thử xem bạn sẽ chọn gì nhé.</p>
+            <button class="button button-primary" id="start-button" type="button">Chơi một ván <span aria-hidden="true">↗</span></button>
+            <p class="tiny-note">3 tình huống · khoảng 2 phút · không có đáp án sai</p>
+          </div>
+          <div class="illustration-wrap" aria-label="Minh họa chú mèo ngồi cạnh điện thoại có thông báo giảm giá">
+            <div class="sticker sticker-sale">-30%<small>chỉ hôm nay</small></div>
+            <div class="sticker sticker-heart" aria-hidden="true">♥</div>
+            <svg class="hero-art" viewBox="0 0 440 390" role="img" aria-labelledby="art-title">
+              <title id="art-title">Mèo Mây cân nhắc một món đồ trong giỏ hàng</title>
+              <ellipse cx="224" cy="344" rx="164" ry="20" fill="#dce7d7" />
+              <path d="M91 300c12-34 51-45 82-33l33 15c17 8 37 8 54 0l28-13c41-19 86 8 86 51v24H91z" fill="#f2a88f" />
+              <path d="M135 139 118 63c-2-9 8-15 16-10l63 42m66 44 48-73c5-8 17-5 18 5l8 79" fill="#fff0d6" stroke="#344b43" stroke-width="7" stroke-linejoin="round" />
+              <path d="m137 77 43 29m126-10-28 41" fill="none" stroke="#f2a88f" stroke-width="13" stroke-linecap="round" />
+              <path d="M126 184c0-57 43-98 97-98s97 41 97 98v48c0 59-42 91-97 91s-97-32-97-91z" fill="#fff0d6" stroke="#344b43" stroke-width="7" />
+              <path d="M173 187c7-9 18-9 25 0m55 0c7-9 18-9 25 0" fill="none" stroke="#344b43" stroke-width="7" stroke-linecap="round" />
+              <path d="M210 211q12 11 24 0" fill="none" stroke="#344b43" stroke-width="6" stroke-linecap="round" />
+              <circle cx="161" cy="210" r="11" fill="#ef9a8b" opacity=".8" /><circle cx="289" cy="210" r="11" fill="#ef9a8b" opacity=".8" />
+              <path d="M221 250c-27-23-44 8 0 31 44-23 27-54 0-31" fill="#e78172" />
+              <rect x="41" y="203" width="91" height="139" rx="17" fill="#c6e7dc" stroke="#344b43" stroke-width="7" transform="rotate(-8 41 203)" />
+              <rect x="52" y="218" width="70" height="97" rx="8" fill="#f9fff8" transform="rotate(-8 52 218)" />
+              <circle cx="84" cy="329" r="5" fill="#344b43" />
+              <path d="M67 249h36m-33 14h26m-21 15h28" stroke="#e78172" stroke-width="6" stroke-linecap="round" transform="rotate(-8 67 249)" />
+              <path d="M345 143q14-18 28 0-14 18-28 0m34 0h9" fill="none" stroke="#344b43" stroke-width="5" stroke-linecap="round" />
+              <path d="M88 128v13m-7-7h14m264 136v13m-7-7h14" stroke="#dfae39" stroke-width="5" stroke-linecap="round" />
+            </svg>
+            <div class="art-caption"><span class="caption-dot"></span> Mèo Mây đang suy nghĩ...</div>
+          </div>
+        </section>
+
+        <section class="screen play-screen" id="play-screen" hidden>
+          <div class="play-topline"><span class="round-label" id="round-label">TÌNH HUỐNG 1 / 3</span><span class="round-counter"><span id="round-number">01</span><span class="counter-slash">/</span>03</span></div>
+          <div class="progress-track" aria-label="Tiến trình trò chơi"><span id="progress-fill"></span></div>
+          <div class="scene-card">
+            <div class="scene-copy">
+              <div class="feed-meta"><span class="avatar" id="avatar">L</span><span id="feed-name">linh.nguyen</span><span class="verified" aria-label="đã xác minh">●</span><span class="feed-time" id="feed-time">vừa xong</span></div>
+              <p class="pressure-tag" id="pressure-tag">ĐANG HOT <span aria-hidden="true">↗</span></p>
+              <h2 id="scenario-title">Deal đang chờ bạn đó!</h2>
+              <p class="scenario-description" id="scenario-description"></p>
+              <div class="product-row"><div class="product-icon" id="product-icon" aria-hidden="true">🧴</div><div class="product-details"><strong id="product-name"></strong><span id="product-price"></span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </div>
+            <div class="phone-side" aria-hidden="true"><div class="phone-notch"></div><div class="phone-feed-dot"></div><div class="phone-feed-line"></div><div class="phone-picture" id="phone-picture">🛍️</div><div class="phone-feed-line line-short"></div><div class="phone-feed-line line-medium"></div><div class="phone-icons">♡　◯　↗</div><div class="phone-alert">⏳ <span id="phone-alert">còn 15 phút</span></div></div>
+          </div>
+          <p class="choice-question">Khoảnh khắc này, bạn muốn...</p>
+          <div class="choice-grid" id="choice-grid">
+            <button class="choice-button choice-pause" id="pause-button" type="button"><span class="choice-icon" aria-hidden="true">☁</span><span><strong>Thở một nhịp</strong><small>Để qua ngày mai rồi quyết định</small></span><span class="choice-arrow" aria-hidden="true">↗</span></button>
+            <button class="choice-button choice-buy" id="buy-button" type="button"><span class="choice-icon" aria-hidden="true">🛒</span><span><strong>Mua trước, trả sau</strong><small id="installment-copy">Chia nhỏ thành 4 kỳ</small></span><span class="choice-arrow" aria-hidden="true">↗</span></button>
+          </div>
+          <div class="feedback" id="feedback" role="status" hidden><span class="feedback-icon" id="feedback-icon" aria-hidden="true">✦</span><p id="feedback-copy"></p><button class="button button-primary button-next" id="next-button" type="button">Tình huống tiếp theo <span aria-hidden="true">→</span></button></div>
+          <div class="score-strip" aria-label="Thống kê lựa chọn"><span><i class="score-leaf" aria-hidden="true">✿</i> Đã giữ lại <strong id="saved-total">0đ</strong></span><span class="score-separator" aria-hidden="true"></span><span><i class="score-cloud" aria-hidden="true">☁</i> Tâm trí <strong id="calm-score">0/3</strong></span></div>
+        </section>
+
+        <section class="screen result-screen" id="result-screen" hidden>
+          <div class="result-art" aria-hidden="true"><span class="result-sun">✳</span><span class="result-face">☺</span><span class="result-star star-a">✦</span><span class="result-star star-b">✧</span></div>
+          <p class="eyebrow"><span></span> VÁN NÀY CỦA BẠN</p>
+          <h2 id="result-title">Bạn đã chọn chậm lại.</h2>
+          <p class="result-copy" id="result-copy"></p>
+          <div class="result-stats"><div><span>Đã giữ lại trong ví</span><strong id="result-saved">0đ</strong></div><div><span>Lần bạn chọn bình tĩnh</span><strong id="result-calm">0/3</strong></div></div>
+          <p class="takeaway" id="takeaway"></p>
+          <div class="result-actions"><button class="button button-primary" id="replay-button" type="button">Chơi lại <span aria-hidden="true">↻</span></button><button class="button button-secondary" id="share-button" type="button"><span aria-hidden="true">↗</span> Chia sẻ game</button></div>
+          <a class="survey-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdIHbcX6UtJ6HYOte8IjfNOEEJJzzMKWMTVfAF9jNn2nDF9HQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Làm khảo sát về FOMO và mua trước trả sau <span aria-hidden="true">↗</span></a>
+        </section>
+      </section>
+      <footer class="page-footer"><span>Chậm một nhịp, chọn điều hợp với mình.</span><span>Không thu thập dữ liệu người chơi</span></footer>
+    </main>
+  </body>
+</html>
